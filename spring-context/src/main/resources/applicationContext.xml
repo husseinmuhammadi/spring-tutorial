@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="productService" class="com.javastudio.tutorial.spring.service.ProductServiceImpl">
+
+    </bean>
+
+    <bean name="product" class="com.javastudio.tutorial.spring.model.Product">
+        <property name="name" value="Hossein"></property>
+    </bean>
+</beans>
