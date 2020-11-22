@@ -9,4 +9,12 @@
     <bean name="product" class="com.javastudio.tutorial.spring.model.Product">
         <property name="name" value="Hossein"></property>
     </bean>
+
+    <bean name="x" class="com.javastudio.tutorial.spring.model.Product" scope="prototype">
+
+    </bean>
+
+    <bean name="y" class="com.javastudio.tutorial.spring.model.Order">
+
+    </bean>
 </beans>

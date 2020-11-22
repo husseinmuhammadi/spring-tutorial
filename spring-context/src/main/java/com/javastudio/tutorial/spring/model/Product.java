@@ -1,8 +1,18 @@
 package com.javastudio.tutorial.spring.model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Date;
 
 public class Product {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Product.class);
+
+    public Product() {
+        LOGGER.info("An instance of product class is being instantiated");
+    }
+
     String name;
     Date expiryDate;
     int length;
