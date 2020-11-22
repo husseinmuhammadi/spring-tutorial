@@ -10,7 +10,8 @@
         <property name="name" value="Hossein"></property>
     </bean>
 
-    <bean name="x" class="com.javastudio.tutorial.spring.model.Product" scope="prototype">
+    <bean name="x" class="com.javastudio.tutorial.spring.model.Product" scope="prototype"
+          init-method="init">
 
     </bean>
 

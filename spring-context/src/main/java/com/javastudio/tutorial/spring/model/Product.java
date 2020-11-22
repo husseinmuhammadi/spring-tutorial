@@ -3,6 +3,7 @@ package com.javastudio.tutorial.spring.model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.PostConstruct;
 import java.util.Date;
 
 public class Product {
@@ -16,6 +17,10 @@ public class Product {
     String name;
     Date expiryDate;
     int length;
+
+    private void init(){
+        LOGGER.info("Initialize the product");
+    }
 
     public Date getExpiryDate() {
         return expiryDate;
