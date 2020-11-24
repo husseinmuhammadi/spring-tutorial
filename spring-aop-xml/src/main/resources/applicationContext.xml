@@ -15,9 +15,10 @@
 
     <aop:config proxy-target-class="true">
         <aop:aspect id="aspects" ref="aspect">
-            <aop:pointcut id="beforeServiceCall"
+            <aop:pointcut id="serviceCall"
                           expression="execution(* com.javastudio.tutorial.spring.service.ProductServiceImpl+.*(..))"/>
-            <aop:before method="logBeforeService" pointcut-ref="beforeServiceCall"></aop:before>
+            <aop:before method="logBeforeService" pointcut-ref="serviceCall"></aop:before>
+            <aop:after method="logAfterService" pointcut-ref="serviceCall"></aop:after>
         </aop:aspect>
     </aop:config>
 </beans>

@@ -9,4 +9,8 @@ public class ServiceAspect {
     public void logBeforeService() {
         LOGGER.info("---> Before Service Method");
     }
+
+    public void logAfterService() {
+        LOGGER.info("---> After Service Method");
+    }
 }
