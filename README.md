@@ -61,3 +61,39 @@ Spring uses the AspectJ pointcut expression language by default.
 ```
 
 #### Enable AOP configuration in Spring applications
+Create a class marked with annotations
+```
+@Configuration
+@EnableAspectJAutoProxy(proxyTargetClass = true)
+public class AopConfig {
+ 
+}
+```
+or add following line in your applicationContext.xml
+```
+<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>
+```
+
+Create Aspect 
+
+Create a class ans label it with @Aspect and @Component annotation
+```
+@Aspect
+@Component
+class MyAspect {
+``` 
+
+To create and advice to run on particular point of execution of the code create  methods in your aspect class 
+and label it by @Before, @After and @Around and so on ...
+you need to decorate your annotation with point-cut expression to match the particular join-points.
+```
+@Before("execution(* com.javastudio.tutorial.spring.service.ProductServiceImpl+.*(..))") // point-cut expression
+public void logBeforeProductServiceImpl() {
+
+@After("execution(* com.javastudio.tutorial.spring.api.ProductService+.*(..))") // point-cut expression
+public void logAfterProductService() {
+
+@After("execution(* com.javastudio.tutorial.spring.service.GeneralServiceBase+.*(..))") // point-cut expression
+public void logAfterGeneralServiceBase() {
+```
+ 
