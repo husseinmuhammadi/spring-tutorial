@@ -13,6 +13,7 @@
     <bean name="productService" class="com.javastudio.tutorial.spring.service.ProductServiceImpl"/>
     <bean id="aspect" class="com.javastudio.tutorial.spring.aspect.ServiceAspect"/>
 
+    <!--<aop:aspectj-autoproxy/>-->
     <aop:config proxy-target-class="true">
         <aop:aspect id="aspects" ref="aspect">
             <aop:pointcut id="serviceCall"
