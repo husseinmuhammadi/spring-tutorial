@@ -14,6 +14,7 @@
     <packaging>jar</packaging>
 
     <build>
+        <finalName>spring-context</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -13,7 +13,7 @@
     <artifactId>spring-aop-xml</artifactId>
     <packaging>jar</packaging>
 
-    <build>
+    <build><finalName>spring-aop</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
