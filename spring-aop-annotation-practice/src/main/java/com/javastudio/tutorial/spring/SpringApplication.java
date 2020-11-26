@@ -6,7 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public enum SpringApplication {
     INSTANCE;
 
-    public void getContext(){
+    public ApplicationContext getContext() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        return context;
     }
 }
