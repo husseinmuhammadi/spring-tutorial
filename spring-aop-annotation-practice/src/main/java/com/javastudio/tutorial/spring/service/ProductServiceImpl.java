@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ProductServiceImpl extends ServiceBase implements ProductService {
+public class ProductServiceImpl extends GeneralServiceBase implements ProductService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductServiceImpl.class);
 
