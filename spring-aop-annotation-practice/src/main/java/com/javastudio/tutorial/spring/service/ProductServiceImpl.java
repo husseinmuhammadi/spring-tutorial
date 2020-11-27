@@ -19,4 +19,10 @@ public class ProductServiceImpl extends GeneralServiceBase implements ProductSer
         LOGGER.info("ProductServiceImpl#findAll");
         return new ArrayList<>();
     }
+
+    @Override
+    public Product findById(long id) {
+        LOGGER.info("ProductServiceImpl#findById");
+        return new Product();
+    }
 }

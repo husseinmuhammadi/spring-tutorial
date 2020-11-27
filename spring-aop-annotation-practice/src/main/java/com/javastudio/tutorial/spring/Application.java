@@ -11,6 +11,6 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.INSTANCE.getContext();
         ProductService productService = context.getBean(ProductService.class);
-        productService.findAll();
+        productService.findAll(1);
     }
 }
