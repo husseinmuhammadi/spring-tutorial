@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 @Component
 public class ProductServiceImpl extends GeneralServiceBase implements ProductService {
@@ -24,5 +25,14 @@ public class ProductServiceImpl extends GeneralServiceBase implements ProductSer
     public Product findById(long id) {
         LOGGER.info("ProductServiceImpl#findById");
         return new Product();
+    }
+
+    public List<Product> findByParams(List<Predicate<Product>> predicates) {
+        try {
+            //...
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
