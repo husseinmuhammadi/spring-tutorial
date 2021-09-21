@@ -8,7 +8,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @Configuration
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AopConfig {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AopConfig.class) ;;
+    private static final Logger LOGGER = LoggerFactory.getLogger(AopConfig.class);
 
     public AopConfig() {
         LOGGER.info("AopConfig#ctor");
