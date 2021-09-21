@@ -21,6 +21,7 @@
         <module>spring-aop-xml</module>
         <module>spring-aop-annotation</module>
         <module>spring-aop-annotation-practice</module>
+        <module>spring-transaction</module>
     </modules>
 
     <build>
